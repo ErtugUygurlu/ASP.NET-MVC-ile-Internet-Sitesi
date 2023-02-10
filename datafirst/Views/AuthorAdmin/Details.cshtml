@@ -1,0 +1,36 @@
+﻿@model datafirst.Models.Author
+<div class="modal-header" style="background-color:cyan">
+    <button type="button" class="close" data-dismiss="modal">&times;</button>
+    <h4 class="modal-title" style="text-align:center">@Model.NameSurname</h4>
+</div>
+<div class="modal-body">
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                Yazar Resmi
+            </td>
+            <td>
+                <img src="@Model.Image" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Yazar Adı
+            </td>
+            <td>
+                @Model.NameSurname
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Yazar Email
+            </td>
+            <td>
+                @Model.Email
+            </td>
+        </tr>
+    </table>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+</div>
